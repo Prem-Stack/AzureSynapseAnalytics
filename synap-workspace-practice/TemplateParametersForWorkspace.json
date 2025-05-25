@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "synap-workspace-practice"
+		},
+		"synap-workspace-practice-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synap-workspace-practice.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"ls_ServerLessAzureSqlDatabase_properties_typeProperties_server": {
+			"value": "synap-workspace-practice-ondemand.sql.azuresynapse.net"
+		},
+		"ls_ServerLessAzureSqlDatabase_properties_typeProperties_database": {
+			"value": "gold_db"
+		},
+		"synap-workspace-practice-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://storageadlspractice.dfs.core.windows.net"
+		}
+	}
+}
