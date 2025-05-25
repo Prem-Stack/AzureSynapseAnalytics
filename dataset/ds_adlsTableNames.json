@@ -1,0 +1,19 @@
+{
+	"name": "ds_adlsTableNames",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "synap-workspace-practice-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "SalesLT",
+				"fileSystem": "source"
+			}
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
